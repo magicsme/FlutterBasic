@@ -34,6 +34,7 @@ class FYHomePage extends StatelessWidget{
   }
 }
 
+//Statefullwidget: 继承自statefulwidget的类（可以接收父widget传过来的数据/state类(状态)）
 //flag: state
 //stateful 不能定义状态 -》创建一个单独的类，这个类免责维护状态
 class FYContentBody extends StatefulWidget{
