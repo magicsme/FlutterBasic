@@ -92,3 +92,24 @@ class _FYCircleAvatar extends State<FYCircleAvatar>{
     );
   }
 }
+
+//缺省图片 ，默认缓存1000张,100M
+class FadeInImageDemo extends StatelessWidget {
+  @override
+  Widget build(BuildContext context) {
+    return Column(
+      children: <Widget>[
+        FadeInImage.assetNetwork(
+          placeholder: "assets/images/test.png",
+          //预览图
+          fit: BoxFit.fitWidth,
+          image:
+          "https://img2.baidu.com/it/u=2817526356,1385623556&fm=253&fmt=auto&app=120&f=JPEG?w=1280&h=800",
+          width: 200.0,
+          height: 200.0,
+        ),
+
+      ],
+    );
+  }
+}
